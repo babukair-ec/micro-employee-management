@@ -1,0 +1,21 @@
+# Translation file for TaskOrbit employee-service
+# Language: en
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-02 22:00+0300\n"
+"PO-Revision-Date: 2026-10-02 22:00+0300\n"
+"Last-Translator: TaskOrbit Team\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Arabic"
+msgstr "Arabic"
+
+msgid "English"
+msgstr "English"
