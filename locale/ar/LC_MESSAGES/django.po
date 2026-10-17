@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-02 22:00+0300\n"
-"PO-Revision-Date: 2026-10-02 22:00+0300\n"
+"POT-Creation-Date: 2026-10-17 20:00+0300\n"
+"PO-Revision-Date: 2026-10-17 20:00+0300\n"
 "Last-Translator: TaskOrbit Team\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -19,3 +19,291 @@ msgstr "العربية"
 
 msgid "English"
 msgstr "الإنجليزية"
+
+msgid "Employee"
+msgstr "موظف"
+
+msgid "Employees"
+msgstr "الموظفون"
+
+msgid "Tester"
+msgstr "مختبِر جودة"
+
+msgid "User ID"
+msgstr "معرف المستخدم"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "First Name"
+msgstr "الاسم الأول"
+
+msgid "Last Name"
+msgstr "اسم العائلة"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+msgid "Employee Type"
+msgstr "نوع الموظف"
+
+msgid "Phone"
+msgstr "رقم الهاتف"
+
+msgid "Is Active"
+msgstr "نشط"
+
+msgid "Created At"
+msgstr "تاريخ الإنشاء"
+
+msgid "Updated At"
+msgstr "تاريخ التحديث"
+
+msgid "Supervisor"
+msgstr "المشرف"
+
+msgid "Subordinate"
+msgstr "المرؤوس"
+
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+msgid "Supervision"
+msgstr "الإشراف"
+
+msgid "Supervisions"
+msgstr "علاقات الإشراف"
+
+msgid "An employee cannot supervise themselves."
+msgstr "لا يمكن للموظف الإشراف على نفسه."
+
+msgid "Department"
+msgstr "القسم"
+
+msgid "Project"
+msgstr "المشروع"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Unique Code"
+msgstr "الرمز الفريد"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Type"
+msgstr "النوع"
+
+msgid "Parent Department"
+msgstr "القسم التابع له"
+
+msgid "Manager"
+msgstr "المدير المسؤول"
+
+msgid "Department or Project"
+msgstr "قسم أو مشروع"
+
+msgid "Departments and Projects"
+msgstr "الأقسام والمشاريع"
+
+msgid "A project must belong to a department."
+msgstr "يجب أن يتبع المشروع لقسم محدد."
+
+msgid "A project cannot belong to another project. It must belong to a department."
+msgstr "لا يمكن أن يتبع المشروع لمشروع آخر، بل يجب أن يتبع لقسم."
+
+msgid "A project cannot be its own department."
+msgstr "لا يمكن للمشروع أن يكون قسماً لنفسه."
+
+msgid "A department cannot belong to another department or project."
+msgstr "لا يمكن للقسم أن يتبع لقسم آخر أو مشروع."
+
+msgid "Parent entity must be a Department, not a Project."
+msgstr "الكيان الرئيسي يجب أن يكون قسماً وليس مشروعاً."
+
+msgid "Is Current"
+msgstr "الحالي"
+
+msgid "Assigned At"
+msgstr "تاريخ الإسناد"
+
+msgid "Ended At"
+msgstr "تاريخ الانتهاء"
+
+msgid "Employee Department Project"
+msgstr "تعيين الموظف في القسم أو المشروع"
+
+msgid "Employee Department Projects"
+msgstr "تعيينات الموظفين في الأقسام والمشاريع"
+
+msgid "An employee cannot be assigned to more than one project. Employee is already assigned to '%(proj)s'."
+msgstr "لا يمكن إسناد الموظف لأكثر من مشروع واحد. الموظف مسند بالفعل إلى '%(proj)s'."
+
+msgid "An employee cannot be assigned to more than one project. Employee is already assigned to project '%(project)s'."
+msgstr "لا يمكن إسناد الموظف لأكثر من مشروع واحد. الموظف مسند بالفعل إلى المشروع '%(project)s'."
+
+msgid "An employee can only be assigned to a project within their assigned department. Employee belongs to '%(dept)s', while project belongs to '%(proj_dept)s'."
+msgstr "لا يمكن إسناد الموظف إلا لمشروع ضمن قسمه المعين. الموظف ينتمي إلى '%(dept)s' بينما يتبع المشروع لقسم '%(proj_dept)s'."
+
+msgid "An employee can only be assigned to a project within their assigned department. The employee belongs to '%(dept)s', whereas this project belongs to '%(proj_dept)s'."
+msgstr "لا يمكن إسناد الموظف إلا لمشروع ضمن قسمه المعين. الموظف ينتمي إلى '%(dept)s' بينما يتبع هذا المشروع لقسم '%(proj_dept)s'."
+
+msgid "The employee is currently assigned to project '%(proj)s' under department '%(proj_dept)s', and cannot be assigned to a different department."
+msgstr "الموظف مسند حالياً للمشروع '%(proj)s' التابع لقسم '%(proj_dept)s'، ولا يمكن تعيينه في قسم مختلف."
+
+msgid "The employee is currently assigned to project '%(project)s' under department '%(proj_dept)s', and cannot be assigned to a different department."
+msgstr "الموظف مسند حالياً للمشروع '%(project)s' التابع لقسم '%(proj_dept)s'، ولا يمكن تعيينه في قسم مختلف."
+
+msgid "The employee is already assigned to department '%(dept)s'. An employee cannot be assigned to more than one department."
+msgstr "الموظف معين بالفعل في قسم '%(dept)s'. لا يمكن إسناد الموظف لأكثر من قسم واحد."
+
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+msgid "Approved"
+msgstr "تمت الموافقة"
+
+msgid "Rejected"
+msgstr "مرفوض"
+
+msgid "Cancelled"
+msgstr "ملغي"
+
+msgid "Escalated"
+msgstr "تم التصعيد"
+
+msgid "Request to Supervise Target"
+msgstr "طلب الإشراف على الموظف المستهدف"
+
+msgid "Request to be Supervised by Target"
+msgstr "طلب التبعية الإشرافية للموظف المستهدف"
+
+msgid "Requester"
+msgstr "مقدم الطلب"
+
+msgid "Target Employee"
+msgstr "الموظف المستهدف"
+
+msgid "Request Type"
+msgstr "نوع الطلب"
+
+msgid "Proposed Supervisor"
+msgstr "المشرف المقترح"
+
+msgid "Proposed Subordinate"
+msgstr "المرؤوس المقترح"
+
+msgid "Current Supervisor"
+msgstr "المشرف الحالي"
+
+msgid "Current Approver"
+msgstr "صاحب الصلاحية الحالي"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Decision Reason"
+msgstr "مبرر القرار"
+
+msgid "Responded At"
+msgstr "تاريخ ووقت الرد"
+
+msgid "Escalated At"
+msgstr "تاريخ ووقت التصعيد"
+
+msgid "Escalated To"
+msgstr "تم التصعيد إلى"
+
+msgid "Supervision Request"
+msgstr "طلب إشراف"
+
+msgid "Supervision Requests"
+msgstr "طلبات الإشراف"
+
+msgid "Department/Project not found."
+msgstr "القسم أو المشروع غير موجود."
+
+msgid "This department/project does not have an assigned manager. Please assign a manager first."
+msgstr "هذا القسم أو المشروع ليس له مدير مسؤول، يرجى تعيين مدير أولاً."
+
+msgid "Current user has no associated employee profile."
+msgstr "المستخدم الحالي ليس لديه ملف وظيفي مرتبط."
+
+msgid "Current user has no associated employee profile"
+msgstr "المستخدم الحالي ليس لديه ملف وظيفي مرتبط"
+
+msgid "User is not authenticated"
+msgstr "المستخدم غير مسجل الدخول"
+
+msgid "Employee data can ONLY be updated through their dedicated Profile page."
+msgstr "بيانات الموظف يمكن تعديلها حصراً من خلال صفحة الملف الشخصي المخصصة له."
+
+msgid "Employee deletion is strictly disallowed."
+msgstr "حذف بيانات الموظف غير مسموح به نهائياً."
+
+msgid "Employee profile not found"
+msgstr "الملف الوظيفي للموظف غير موجود"
+
+msgid "Manager must be yourself or one of your descendants in the supervision hierarchy."
+msgstr "يجب أن يكون المدير المسؤول هو أنت أو أحد الموظفين التابعين لك في تسلسل شجرة الإشراف."
+
+msgid "department_project parameter is required"
+msgstr "معلمة القسم/المشروع إلزامية"
+
+msgid "Department or Project not found"
+msgstr "القسم أو المشروع غير موجود"
+
+msgid "department_project is required"
+msgstr "حقل القسم/المشروع إلزامي"
+
+msgid "This employee is already actively assigned to this department/project."
+msgstr "هذا الموظف معين بالفعل في هذا القسم/المشروع حالياً."
+
+msgid "target_employee is required"
+msgstr "الموظف المستهدف إلزامي"
+
+msgid "Target employee not found"
+msgstr "الموظف المستهدف غير موجود"
+
+msgid "Invalid request type."
+msgstr "نوع الطلب غير صالح."
+
+msgid "This request would create a cycle in the supervision hierarchy."
+msgstr "هذا الطلب سيؤدي إلى تكرار حلقي غير مسموح به في شجرة الإشراف."
+
+msgid "Cannot approve: this would create a cycle in the supervision hierarchy."
+msgstr "تعذر اعتماد الطلب: سيؤدي ذلك إلى تكرار حلقي في شجرة الإشراف."
+
+msgid "Supervision request not found"
+msgstr "طلب الإشراف غير موجود"
+
+msgid "Only the current approver can escalate this request."
+msgstr "يحق فقط للمسؤول الحالي تصعيد هذا الطلب."
+
+msgid "You are at the top level of the hierarchy and have no superior to escalate to."
+msgstr "أنت في أعلى قمة الهيكل التنظيمي ولا يوجد مشرف أعلى لتصعيد الطلب إليه."
+
+msgid "Only the requester can cancel this request."
+msgstr "يحق فقط لصاحب الطلب إلغاء هذا الطلب."
+
+msgid "Authorization header must start with Bearer"
+msgstr "يجب أن تبدأ ترويسة التفويض بـ Bearer"
+
+msgid "Token not provided"
+msgstr "رمز التفويض غير مرفق"
+
+msgid "Authorization header contains extra spaces or invalid characters"
+msgstr "تحتوي ترويسة التفويض على مسافات زائدة أو أحرف غير صالحة"
+
+msgid "Token has expired"
+msgstr "انتهت صلاحية رمز التفويض"
+
+msgid "Token missing user identification"
+msgstr "رمز التفويض يفتقر إلى بيانات تعريف المستخدم"

@@ -179,7 +179,7 @@ class CheckAuthView(APIView):
             return Response({
                 'authenticated': True,
                 'user_id': str(getattr(request.user, 'id', None)),
-                'outer_id': str(emp.outer_id) if emp else None
+                'outer_id': str(emp.outer_id) if emp else None,
                 'username': getattr(request.user, 'username', ''),
                 'email': getattr(request.user, 'email', ''),
                 'full_name': getattr(request.user, 'full_name', ''),

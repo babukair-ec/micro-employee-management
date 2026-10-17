@@ -231,22 +231,22 @@ class EmployeeSerializer(serializers.ModelSerializer):
 
 
 class SupervisionRequestSerializer(serializers.ModelSerializer):
-    requester = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True)
+    requester = EmployeeOuterIdRelatedField(queryset=Employee.objects.all())
     requester_name = serializers.CharField(source='requester.full_name', read_only=True)
     requester_username = serializers.CharField(source='requester.username', read_only=True)
     target_employee = EmployeeOuterIdRelatedField(queryset=Employee.objects.all())
     target_employee_name = serializers.CharField(source='target_employee.full_name', read_only=True)
     target_employee_username = serializers.CharField(source='target_employee.username', read_only=True)
-    proposed_supervisor = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True)
+    proposed_supervisor = EmployeeOuterIdRelatedField(queryset=Employee.objects.all())
     proposed_supervisor_name = serializers.CharField(source='proposed_supervisor.full_name', read_only=True)
-    proposed_subordinate = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True)
+    proposed_subordinate = EmployeeOuterIdRelatedField(queryset=Employee.objects.all())
     proposed_subordinate_name = serializers.CharField(source='proposed_subordinate.full_name', read_only=True)
-    current_supervisor = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True, allow_null=True)
+    current_supervisor = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), allow_null=True)
     current_supervisor_name = serializers.CharField(source='current_supervisor.full_name', read_only=True, allow_null=True)
-    current_approver = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True)
+    current_approver = EmployeeOuterIdRelatedField(queryset=Employee.objects.all())
     current_approver_name = serializers.CharField(source='current_approver.full_name', read_only=True)
     current_approver_username = serializers.CharField(source='current_approver.username', read_only=True)
-    escalated_to = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), read_only=True, allow_null=True)
+    escalated_to = EmployeeOuterIdRelatedField(queryset=Employee.objects.all(), allow_null=True)
 
     class Meta:
         model = SupervisionRequest
