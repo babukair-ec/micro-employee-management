@@ -119,7 +119,7 @@ REST_FRAMEWORK = {
 
 JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'microservices-shared-task-management-jwt-secret-key-2026')
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=int(os.getenv('ACCESS_TOKEN_LIFETIME_MINUTES', 1440))),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=int(os.getenv('ACCESS_TOKEN_LIFETIME_MINUTES', 480))),  # 8 hours
     'ALGORITHM': os.getenv('JWT_ALGORITHM', 'HS256'),
     'SIGNING_KEY': JWT_SECRET_KEY,
     'AUTH_HEADER_TYPES': ('Bearer',),

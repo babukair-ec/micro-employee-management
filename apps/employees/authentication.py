@@ -17,10 +17,7 @@ class StatelessUser:
     def __init__(self, payload: dict):
         self.payload = payload
         raw_id = payload.get('user_id') or payload.get('id') or payload.get('employee_id')
-        try:
-            self.id = int(raw_id) if raw_id is not None else None
-        except (ValueError, TypeError):
-            self.id = raw_id
+        self.id = str(raw_id) if raw_id is not None else None
 
         self.pk = self.id
         self.user_id = self.id
