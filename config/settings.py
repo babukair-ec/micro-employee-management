@@ -132,3 +132,17 @@ CORS_ALLOW_CREDENTIALS = True
 
 RABBITMQ_URL = os.getenv('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
 RABBITMQ_EXCHANGE = os.getenv('RABBITMQ_EXCHANGE', 'task_management_events')
+
+# Celery Configuration
+CELERY_BROKER_URL = RABBITMQ_URL
+CELERY_RESULT_BACKEND = None
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
+CELERY_TASK_TRACK_STARTED = True
+
+# WebSocket Server Configuration
+WS_HOST = os.getenv('WS_HOST', '0.0.0.0')
+WS_PORT = int(os.getenv('WS_PORT', 8003))
+

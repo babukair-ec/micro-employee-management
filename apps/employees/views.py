@@ -275,6 +275,44 @@ class CurrentEmployeeProfileView(APIView):
         serializer = EmployeeSerializer(employee)
         return Response(serializer.data)
 
+    def post(self, request):
+        """
+        Creates an employee profile for the currently authenticated user if it does not exist yet.
+        Used when the employee was not created via event or needs manual creation from the Profile screen.
+        """
+        if not check_authenticated(request):
+            return Response({
+                'error': 'ERR_UNAUTHORIZED',
+                'message': str(_('User is not authenticated'))
+            }, status=status.HTTP_401_UNAUTHORIZED)
+
+        existing = get_current_employee(request)
+        if existing:
+            return Response({
+                'error': 'ERR_EMPLOYEE_EXISTS',
+                'message': str(_('Employee profile already exists')),
+                'data': EmployeeSerializer(existing).data
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        user_id = getattr(request.user, 'id', None)
+        username = getattr(request.user, 'username', '')
+
+        data = request.data.copy() if hasattr(request.data, 'copy') else dict(request.data)
+        data['user_id'] = user_id
+        data['username'] = username
+        if not data.get('first_name'):
+            data['first_name'] = getattr(request.user, 'first_name', '')
+        if not data.get('last_name'):
+            data['last_name'] = getattr(request.user, 'last_name', '')
+        if not data.get('email'):
+            data['email'] = getattr(request.user, 'email', None)
+
+        serializer = EmployeeSerializer(data=data)
+        if serializer.is_valid():
+            employee = serializer.save()
+            return Response(EmployeeSerializer(employee).data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
     def put(self, request):
         return self._update_profile(request, partial=False)
 
